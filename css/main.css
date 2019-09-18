@@ -12,28 +12,45 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1em;
 }
 
-a {
-    color:  #FBF2C0;
-    text-decoration: none;
-  } 
-
-  a:hover {
-    text-decoration: underline;
-  }
-
 header{
     background-color: #F3DE8A ;
     padding: 1em .6em;
 }
+
+  main a {
+    color: #941B0C;
+    padding: 1em .6em;
+    line-height: 1.5em;
+    text-decoration: none;
+  } 
+  
+  main a:hover{
+    text-decoration: underline;
+    color: #F3DE8A;
+  }
+  
+  ul a {
+    text-decoration: none;
+  }
+  
+  ul a:hover {
+    text-decoration: underline;
+    color: #BF3100;
+  }
 
 img {
     position: relative;
     float: right
 }
 
-img {
-    max-width: 100%;
-}
+Footer a {
+    color:  #FBF2C0;
+    text-decoration: none;
+  } 
+
+  footer a:hover {
+      text-decoration: underline;
+  }
 footer {
     background-color: #941B0C;
     padding: .6em .6em;
