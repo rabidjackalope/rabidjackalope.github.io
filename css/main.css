@@ -1,0 +1,41 @@
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBF2C0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #BF3100;
+    margin: 0em;
+    line-height: 1em;
+}
+
+a {
+    color:  #FBF2C0;
+    text-decoration: none;
+  } 
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+header{
+    background-color: #F3DE8A ;
+    padding: 1em .6em;
+}
+
+img {
+    position: relative;
+    float: right
+}
+
+img {
+    max-width: 100%;
+}
+footer {
+    background-color: #941B0C;
+    padding: .6em .6em;
+    color: #FBF2C0;
+}
