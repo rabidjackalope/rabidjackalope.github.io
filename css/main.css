@@ -50,7 +50,9 @@ img {
   position: relative;
   float: right
 }
-
+#lastmodified{
+  color: #F3DE8A;
+}
 Footer a {
   color: #FBF2C0;
   text-decoration: none;
