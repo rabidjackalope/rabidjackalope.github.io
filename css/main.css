@@ -5,12 +5,7 @@
   background-color: #FBF2C0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
   color: #BF3100;
   margin: 0em;
@@ -22,11 +17,14 @@ h2 {
 }
 
 header {
- text-align: center;
+  text-align: center;
   background-color: #F3DE8A;
   padding: 1em .6em;
 }
 
+main{
+  padding: 1em;
+}
 main a {
   color: #941B0C;
   padding: 1em .6em;
