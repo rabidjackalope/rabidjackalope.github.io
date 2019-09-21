@@ -52,6 +52,7 @@ img {
   position: relative;
   float: right;
   max-width: 100%;
+  margin: .5em;
   box-shadow: 4px 4px 8px grey;
   border-radius: 4px;
 }
