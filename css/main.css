@@ -3,6 +3,7 @@
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   background-color: #FBF2C0;
+  border-radius: 15px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -20,6 +21,7 @@ header {
   text-align: center;
   background-color: #F3DE8A;
   padding: 1em .6em;
+  border-radius: 15px;
 }
 
 main{
@@ -48,7 +50,8 @@ ul a:hover {
 
 img {
   position: relative;
-  float: right
+  float: right;
+  max-width: 100%;
 }
 #lastupdate{
   color: #F3DE8A;
@@ -67,4 +70,5 @@ footer {
   background-color: #941B0C;
   padding: .6em .6em;
   color: #FBF2C0;
+  border-radius: 15px;
 }
