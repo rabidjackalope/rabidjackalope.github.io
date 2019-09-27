@@ -1,4 +1,5 @@
 #content {
+  font-size: 16px;
   max-width: 1000px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -9,28 +10,35 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
   color: #BF3100;
-  margin: 0em;
-  line-height: 1em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0.15rem;
 }
 
 h2 {
+  font-size: 1rem;
   border-bottom: 1px solid #BF3100;
 }
 
-header {
+header, footer {
   text-align: center;
-  background-color: #F3DE8A;
-  padding: 1em .6em;
-  border-radius: 15px;
+  padding: .6rem .6rem;
 }
 
-main{
-  padding: 1em;
+header {
+  background-color: #F3DE8A;
 }
+
+main {
+  padding: 1rem;
+}
+
 main a {
   color: #941B0C;
-  padding: 1em .6em;
-  line-height: 1.5em;
+  padding: 1rem .6rem;
+  line-height: 1.5rem;
   text-decoration: none;
 }
 
@@ -49,17 +57,16 @@ ul a:hover {
 }
 
 img {
-  position: relative;
-  float: right;
   max-width: 100%;
   height: auto;
-  margin: .5em;
-  box-shadow: 4px 4px 8px grey;
-  border-radius: 4px;
+  margin: .5rem;
+
 }
-#lastupdate{
+
+#lastupdate {
   color: #F3DE8A;
 }
+
 Footer a {
   color: #FBF2C0;
   text-decoration: none;
@@ -70,9 +77,6 @@ footer a:hover {
 }
 
 footer {
-  text-align: center;
   background-color: #941B0C;
-  padding: .6em .6em;
   color: #FBF2C0;
-  border-radius: 15px;
 }
