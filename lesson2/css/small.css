@@ -1,0 +1,10 @@
+#content {
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
