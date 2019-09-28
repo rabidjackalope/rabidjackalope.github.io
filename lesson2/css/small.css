@@ -1,10 +1,38 @@
-#content {
+body {
     font-size: 16px;
-    max-width: 1000px;
-    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-  }
+    background-color: #E1BB80;
+    color: #352208;
+}
 
-  h1,h2,h3,h4,h5,h6 {
+header, footer {
+    padding: 0 1rem;
+    margin: .5rem;
+}
+
+main, header, footer {
+    max-width:767px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Ubuntu', sans-serif;
-  }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 2px solid #352208;
+    padding: 0 1rem;
+    background-color: #B5D6A9;
+}
+/*
+section:nth-child(2) {
+    display: none;
+    margin: .05 rem;
+}
+*/
