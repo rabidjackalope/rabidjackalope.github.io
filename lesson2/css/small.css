@@ -5,14 +5,9 @@ body {
     color: #352208;
 }
 
-header, footer {
-    padding: 0 1rem;
-    margin: .5rem;
-}
-
-main, header, footer {
-    max-width:767px;
+main,header,footer {
     margin: 0 auto;
+    max-width: 767px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -25,11 +20,20 @@ main {
 }
 
 main section {
-    margin: 0.5rem;
     border: 2px solid #352208;
     padding: 0 1rem;
     background-color: #B5D6A9;
 }
+
+header, footer {
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.colimage {
+    width: 100%;
+}
+
 /*
 section:nth-child(2) {
     display: none;
