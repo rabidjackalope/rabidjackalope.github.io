@@ -10,6 +10,12 @@ main,header,footer {
     max-width: 767px;
 }
 
+header, footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    line-height: 1.5rem;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -20,21 +26,19 @@ main {
 }
 
 main section {
+    margin: 0.5rem;
     border: 2px solid #352208;
     padding: 0 1rem;
     background-color: #B5D6A9;
 }
 
-header, footer {
-    text-align: center;
-    padding: 1rem 1rem;
-}
-
 .colimage {
     width: 100%;
+    height: auto;
 }
 
-/*
+/* Hide the middle section on mobile or samll views
+
 section:nth-child(2) {
     display: none;
     margin: .05 rem;
