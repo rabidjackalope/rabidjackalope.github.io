@@ -1,8 +1,8 @@
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    background-color: #E1BB80;
-    color: #352208;
+    background-color: #49A078;
+    color: #79D8CD;
 }
 
 main,header,footer {
@@ -12,6 +12,7 @@ main,header,footer {
 
 header, footer {
     text-align: center;
+    background-color: #216869;
     padding: 1rem 1rem;
     line-height: 1.5rem;
 }
@@ -27,9 +28,11 @@ main {
 
 main section {
     margin: 0.5rem;
-    border: 2px solid #352208;
+    border: 2px solid #F2DD59;
     padding: 0 1rem;
-    background-color: #B5D6A9;
+    background-color: #79D8CD;
+    border-radius: 15px;
+    color: #1F2421;
 }
 
 .colimage {
