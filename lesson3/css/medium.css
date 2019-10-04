@@ -1,0 +1,28 @@
+@media only screen and (min-width: 37.5em) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main picture {
+        display: block;
+    }
+
+    main picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
+}
