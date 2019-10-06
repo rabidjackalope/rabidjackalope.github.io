@@ -1,11 +1,19 @@
 @media only screen and (min-width: 32.5em) {
 
+    p {
+        font-size: 1.1rem;
+    }
+
     h1 {
         font-size: 2rem;
     }
 
     h2 {
         font-size:1.5rem
+    }
+
+    header p, footer p {
+        font-size: 16px;
     }
 
     nav ul {
