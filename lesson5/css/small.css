@@ -1,0 +1,212 @@
+body {
+    font-size: 16px;
+    color: #0A369D;
+    font-family: 'Rubik', sans-serif;
+}
+
+header,
+footer {
+    background-color: #92B4F4;
+}
+
+header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+main,
+footer {
+    margin: 0 auto;
+    max-width: 767px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #0A369D;
+}
+
+nav {
+    background-color: #4472ca;
+    text-align: center;
+    display: block;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Place holder CSS for each of the sections of the page
+main section {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px dashed #0A369D;
+    padding: 1rem 1rem;
+    background-color: #cfdee7;
+}*/
+
+p {
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #cfdee7;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #cfdee7;
+    background-color: #4472ca;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+li a.active {
+    color: #0A369D;
+    background-color: #cfdee7;
+    font-weight: bold;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.herodiv img {
+    width: 100%;
+}
+
+.weatherstats {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#cfdee7, #4472ca);
+    border: 1px solid #0A369D;
+    padding: 1rem;
+    box-shadow: 0 0 30px #0A369D;
+    opacity: .85;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
+    grid-auto-rows: 20px;
+    grid-template-areas:
+        "a a"
+        "a a"
+        "b c"
+        "d e"
+        "f g"
+        "h i"
+        "j k";
+}
+
+.weatherstats>div {
+    padding: .5rem;
+    color: #0A369D;
+}
+
+.item1 {
+    grid-area: a;
+    text-align: center;
+    text-decoration: underline #0A369D;
+}
+
+.current {
+    grid-area: b;
+    text-align: right;
+}
+
+.cvalue {
+    grid-area: c;
+}
+
+.high {
+    grid-area: d;
+    text-align: right;
+}
+
+.hivalue {
+    grid-area: e;
+}
+
+.chill {
+    grid-area: f;
+    text-align: right;
+}
+
+.chvalue {
+    grid-area: g;
+}
+
+.humidity {
+    grid-area: h;
+    text-align: right;
+}
+
+.humvalue {
+    grid-area: i;
+}
+
+.speed {
+    grid-area: j;
+    text-align: right;
+}
+
+.spvalue {
+    grid-area: k;
+}
