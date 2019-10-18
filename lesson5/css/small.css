@@ -218,12 +218,14 @@ li a.active {
 
 
 .banner {
-    display: block;
-    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
     background-color: #ffc922;
     color: black;
     text-align: center;
     font-size: 1rem;
+    margin: auto;
+    line-height: 2.5rem;
 }
 
 .article,
