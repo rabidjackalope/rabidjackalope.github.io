@@ -41,15 +41,6 @@
         font-size: 1.5em;
     }
 
-    .banner {
-        display: block;
-        padding: 1rem 1rem;
-        background-color: #ffc922;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-    }
-
     .forecast {
         display: block;
         padding-bottom: 1rem;

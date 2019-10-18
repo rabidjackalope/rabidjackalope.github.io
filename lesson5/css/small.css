@@ -216,6 +216,16 @@ li a.active {
     display: none;
 }
 
+
+.banner {
+    display: block;
+    padding: 1rem 1rem;
+    background-color: #ffc922;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
 .article,
 .contact {
     margin-top: 1rem;
