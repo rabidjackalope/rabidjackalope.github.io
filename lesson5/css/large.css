@@ -2,5 +2,13 @@
     nav li a {
         font-size: 1.3rem;
     }
+    .banner {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .contact img {
+        max-width: 90%;
+    }
 
 }

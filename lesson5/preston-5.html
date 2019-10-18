@@ -19,6 +19,10 @@
 </head>
 
 <body>
+	<div class="banner">
+		<span id="bannerAd"></span>
+	</div>
+
 	<header>
 		<picture>
 			<img src="/lesson5/images/iconfinder_weather-rainy-snowy_274761.svg"
@@ -44,32 +48,84 @@
 
 	<main>
 		<div class="herodiv">
-			<img src="/lesson5/images/aerial-architecture-cars-1486785.jpg" alt="Aerial view of a small town with many houses">
+			<img src="/lesson5/images/aerial-architecture-cars-1486785.jpg"
+				alt="Aerial view of a small town with many houses">
 			<section class="weatherstats">
 				<h2 class="item1">Today's Weather</h2>
-				<div class="current">Currently: </div> 
-				<div class="cvalue">Sunny</div>
-				<div class="high">High: </div> 
-				<div class="hivalue">76 &#8457;</div>
-				<div class="chill">Wind Chill: </div> 
-				<div class="chvalue">&#8457;</div>
-				<div class="humidity">Humidity: </div> 
-				<div class="humvalue">69%</div>
-				<div class="speed">Wind Speed: </div> 
+				<div class="current">Currently: </div>
+				<div class="cvalue">Snow</div>
+				<div class="high">High: </div>
+				<div class="hivalue">20 &#8457;</div>
+				<div class="chill">Wind Chill: </div>
+				<div class="chvalue">16 &#8457;</div>
+				<div class="humidity">Humidity: </div>
+				<div class="humvalue">100%</div>
+				<div class="speed">Wind Speed: </div>
 				<div class="spvalue">5 mph</div>
 			</section>
 		</div>
 
-		<section>
-			<h2>5 day forecast</h2>
+		<section class="forecast">
+			<h2>5-Day Forecast</h2>
+			<table class="weathertable">
+				<tr>
+					<th class="cell">Sunday</th>
+					<th class="cell">Monday</th>
+					<th class="cell">Tuesday</th>
+					<th class="cell">Wednesday</th>
+					<th class="cell">Thursday</th>
+				</tr>
+				<tr>
+					<td class="cell"><img
+							src="/lesson5/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712 (2).png"
+							alt="cloud with snow falling"></td>
+					<td class="cell"><img
+							src="/lesson5/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712 (2).png"
+							alt="cloud with snow falling"></td>
+					<td class="cell"><img
+							src="/lesson5/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712 (2).png"
+							alt="cloud with snow falling"></td>
+					<td class="cell"><img
+							src="/lesson5/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712 (2).png"
+							alt="cloud with snow falling"></td>
+					<td class="cell"><img
+							src="/lesson5/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712 (2).png"
+							alt="cloud with snow falling"></td>
+				</tr>
+			</table>
 		</section>
 
-		<section>
+		<section class="article">
 			<h2>Article</h2>
+			<img src="/lesson5/images/bonfire-burn-campfire-2235874.jpg"
+				alt="burning campfire at night">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sunt possimus
+				sit suscipit expedita temporibus perferendis odit, laborum voluptates praesentium,
+				perspiciatis quisquam, odio quia reprehenderit.</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quaerat repellendus
+				molestiae nemo neque doloribus suscipit at debitis quia, reprehenderit doloremque
+				officiis dolorem numquam amet itaque quo.</p>
+
 		</section>
 
-		<section>
+		<section class="contact">
 			<h2>Contact information</h2>
+			<img class="map" src="/lesson5/images/map-of-soda-springs(1).png"
+				alt="Map of downtown Soda Springs with the business address pinned.">
+			<br>Cold Front Weather</br>
+			144 S Main St Soda Springs, ID 83276</p>
+			<div class="socialmedia">
+				<a href="https://www.instagram.com" target="_blank"><img
+						src="/lesson5/images/instagram.png" alt="instagram icon"></a>
+				<a href="https://www.facebook.com" target="_blank"><img
+						src="/lesson5/images/facebook.png" alt="facebook icon"></a>
+				<a href="https://www.pintrest.com" target="_blank"><img
+						src="/lesson5/images/pinterest.png" alt="pintrest icon"></a>
+				<a href="https://www.twitter.com" target="_blank"><img
+						src="/lesson5/images/twitter.png" alt="twitter icon"></a>
+				<a href="https://www.youtube.com" target="_blank"><img
+						src="/lesson5/images/youtube.png" alt="youtubefacebook icon"></a>
+			</div>
 		</section>
 	</main>
 
@@ -84,6 +140,7 @@
 	<script src="/lesson5/js/currentyear.js"></script>
 	<script src="/lesson5/js/date.js"></script>
 	<script src="/lesson5/js/toggleMenu.js"></script>
+	<script src="/lesson5/js/bannerAd.js"></script>
 
 </body>
 
