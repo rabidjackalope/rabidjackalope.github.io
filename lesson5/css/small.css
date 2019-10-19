@@ -115,7 +115,7 @@ li a.active {
     font-style: italic;
     letter-spacing: 1pt;
     margin-left: 20px;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .herodiv {
@@ -211,7 +211,6 @@ li a.active {
     display: none;
 }
 
-
 .banner {
     display: flex;
     justify-content: center;
@@ -232,10 +231,6 @@ li a.active {
     background-color: #cfdee7;
 }
 
-.article {
-    display: float;
-}
-
 .article img {
     display: block;
     margin-left: 20px;
@@ -247,7 +242,6 @@ li a.active {
 .articleheadings {
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .articleheadings h2 {
