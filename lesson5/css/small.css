@@ -57,11 +57,6 @@ main section {
     background-color: #cfdee7;
 }*/
 
-p {
-    margin: 0;
-    padding: 1rem 1rem;
-}
-
 .navigation {
     list-style: none;
     text-align: center;
@@ -225,7 +220,7 @@ li a.active {
     text-align: center;
     font-size: 1rem;
     margin: auto;
-    line-height: 2.5rem;
+    line-height: 1.75rem;
 }
 
 .article,
@@ -237,18 +232,38 @@ li a.active {
     background-color: #cfdee7;
 }
 
+.article {
+    display: float;
+}
+
 .article img {
     display: block;
-    margin-left: 30px;
-    max-width: 50%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 200px;
     height: auto;
+}
+
+.articleheadings {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.articleheadings h2 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
 }
 
 .map {
     display: none;
 }
 
-.socialmedia {
-    width: 80%;
-    height: auto;
+.socialmedia img {
+    width: 40px;
 }
