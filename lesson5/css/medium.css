@@ -47,6 +47,10 @@
         padding-bottom: 1rem;
     }
 
+    .forecast h2 {
+        text-align: center;
+    }
+
     .weathertable {
         border-collapse: collapse;
         border-spacing: 0;
@@ -85,7 +89,7 @@
     }
 
     .cell img{
-        max-width: 85%;
+        max-width: 55%;
     }
 
     .article img {
