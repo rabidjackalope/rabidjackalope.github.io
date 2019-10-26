@@ -47,8 +47,11 @@
 
 	<main>
 		<div class="herodiv">
-			<img src="/lesson6/images/aerial-architecture-cars-1486785.jpg"
-				alt="Aerial view of a small town">
+			<picture>
+			<source srcset="/lesson6/images/hero-image-medium.jpg" media="(min-width: 39em) and (max-width: 59em)">
+			<source srcset="/lesson6/images/hero-image-large.jpg" media="(min-width: 60em)">
+			<img src="/lesson6/images/hero-image-small.jpg" alt="Responsive Images.">
+			</picture>
 			<div class="weatherstats">
 				<div class="stathead">
 					<h3>Today's Weather</h3>
