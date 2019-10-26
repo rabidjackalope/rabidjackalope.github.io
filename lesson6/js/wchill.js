@@ -1,12 +1,12 @@
-var ct = parseFloat(document.getElementById("temp").value);
-var sp = parseFloat(document.getElementById("speed").value);
+var tempF = parseFloat(document.getElementById("temp").textContent);
+var velo = parseFloat(document.getElementById("speed").textContent);
 
-if (isNaN(ct) || isNaN(sp)) {
+if (isNaN(tempF) || isNaN(velo)) {
     document.getElementById("chill").innerHTML = "N/A"
 } else {
-    document.getElementById("chill").innerHTML = calc(ct, sp) + '&#8457;'
+    document.getElementById("chill").innerHTML = calc(tempF, velo).toFixed(0) + " &#8457;";
 }
 
-function calc(ct, sp) {
-    return (35.74 + 0.6215 * ct - 35.75 * sp ** 0.16 + 0.4275 * ct * sp ** 0.16);
+function calc(t, v) {
+    return (35.74 + 0.6215 * t - 35.75 * v ** 0.16 + 0.4275 * t * v ** 0.16);
 }
