@@ -49,19 +49,30 @@
 		<div class="herodiv">
 			<img src="/lesson6/images/aerial-architecture-cars-1486785.jpg"
 				alt="Aerial view of a small town">
-			<section class="weatherstats">
-				<h2 class="item1">Today's Weather</h2>
-				<div class="current">Currently: </div>
-				<div class="cvalue">Snow</div>
-				<div class="high">High: </div>
-				<div class="hivalue">20 &#8457;</div>
-				<div class="chill">Wind Chill: </div>
-				<div class="chvalue">16 &#8457;</div>
-				<div class="humidity">Humidity: </div>
-				<div class="humvalue">100%</div>
-				<div class="speed">Wind Speed: </div>
-				<div class="spvalue">5 mph</div>
-			</section>
+			<div class="weatherstats">
+				<div class="stathead">
+					<h3>Today's Weather</h3>
+				</div>
+				<div class="column1">
+					<ul>
+						<li>Currently:</li>
+						<li>High:</li>
+						<li>Wind Chill:</li>
+						<li>Humidity:</li>
+						<li>Wind Speed:</li>
+					</ul>
+				</div>
+				<div class='column2'>
+					<ul>
+						<li id="temp">20 &#8457;</li>
+						<li id="high">22 &#8457;</li>
+						<li id="chill"> </li>
+						<li id="humid">98%</li>
+						<li id="speed">5mph</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		</div>
 
 		<section class="forecast">
@@ -161,6 +172,7 @@
 	<script src="/lesson6/js/reminder.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script src="/lesson6/js/webfontload.js"></script>
+	<script src="/lesson6/js/wchill.js"></script>
 
 </body>
 
