@@ -136,6 +136,7 @@ li a.active {
     border-radius: .75rem;
     padding: 1em;
     background: radial-gradient(at 0% 0%, #cfdee7, #4472ca);
+    box-shadow: 0 0 30px #0A369D;
     opacity: .88;
     position: absolute;
     top: 1rem;
