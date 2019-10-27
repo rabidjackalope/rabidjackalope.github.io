@@ -1,7 +1,7 @@
 var tempF = parseFloat(document.getElementById("temp").textContent);
 var velo = parseFloat(document.getElementById("speed").textContent);
 
-if (isNaN(tempF) || isNaN(velo)) {
+if (isNaN(tempF) || isNaN(velo) || tempF>50 || velo<3)  {
     document.getElementById("chill").textContent = "N/A"
 } else {
     document.getElementById("chill").innerHTML = calc(tempF, velo).toFixed(0) + " &#8457;";
