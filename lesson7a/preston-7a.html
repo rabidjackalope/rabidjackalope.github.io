@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Preston Town Page</title>
+	<meta name="description"
+		content="Main page for the town of Preston on the Cold Front Weather website">
+	<link rel="shortcut icon" href="/lesson6/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="/lesson7a/css/normalize.css">
+	<link rel="stylesheet" href="/lesson7a/css/small.css">
+	<link rel="stylesheet" href="/lesson7a/css/medium.css">
+	<link rel="stylesheet" href="/lesson7a/css/large.css">
+</head>
+
+<body>
+	<div class="banner">
+		<span id="reminder"></span>
+	</div>
+
+	<header>
+		<picture>
+			<img src="/lesson7a/images/iconfinder_weather-rainy-snowy_274761.svg"
+				alt="cloud with a snowflake and rain drops">
+		</picture>
+		<section class="headings">
+			<h1>Cold Front Weather</h1>
+			<div class="m">Taking the chill out of your day!</div>
+		</section>
+	</header>
+
+	<nav>
+		<ul class="navigation">
+			<li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="/lesson7a/preston-7a.html" class="active">Preston</a></li>
+			<li><a href="#">Soda Springs</a></li>
+			<li><a href="#">Fish Haven</a></li>
+			<li><a href="#">Storm Center</a></li>
+			<li><a href="/lesson7a/gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div class="herodiv">
+			<picture>
+					<img src="/lesson7a/images/aerial-architecture-cars-1486785.jpg"
+					alt="Aerial view of a small town with many houses">
+			</picture>
+			<div class="weatherstats">
+				<div class="stathead">
+					<h3>Today's Weather</h3>
+				</div>
+				<div class="column1">
+					<ul>
+						<li>Currently:</li>
+						<li>High:</li>
+						<li>Wind Chill:</li>
+						<li>Humidity:</li>
+						<li>Wind Speed:</li>
+					</ul>
+				</div>
+				<div class='column2'>
+					<ul>
+						<li id="tempF"><span id="temp">20</span> &#8457;</li>
+						<li id="high">22 &#8457;</li>
+						<li id="Wchill"><span id="chill"></span></li>
+						<li id="humid">98%</li>
+						<li id="wspeed"><span id="speed">5</span>mph</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<section class="forecast">
+			<h2>5-Day Forecast</h2>
+			<table class="weathertable">
+				<tr>
+					<th class="cell">Sunday</th>
+					<th class="cell">Monday</th>
+					<th class="cell">Tuesday</th>
+					<th class="cell">Wednesday</th>
+					<th class="cell">Thursday</th>
+				</tr>
+				<tr>
+					<td class="cell"><img
+							src="/lesson7a/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
+							alt="cloud with snow falling">
+						<p>Frigid &#8457;</p>
+					</td>
+					<td class="cell"><img
+							src="/lesson7a/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
+							alt="cloud with snow falling">
+						<p>Bitter &#8457;</p>
+					</td>
+					<td class="cell"><img
+							src="/lesson7a/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
+							alt="cloud with snow falling">
+						<p>Frozen &#8457;</p>
+					</td>
+					<td class="cell"><img
+							src="/lesson7a/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
+							alt="cloud with snow falling">
+						<p>Frosty &#8457;</p>
+					</td>
+					<td class="cell"><img
+							src="/lesson7a/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
+							alt="cloud with snow falling">
+						<p>Icy &#8457;</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+
+		<section class="article">
+			<img src="/lesson7a/images/bonfire-burn-campfire-2235874.jpg"
+				alt="burning campfire at night">
+			<div class="articleheadings">
+				<h2>There and Back Again</h2>
+				<div class="m">By: Bilbo Baggins</div>
+			</div>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sunt possimus
+				sit suscipit expedita temporibus perferendis odit, laborum voluptates praesentium,
+				perspiciatis quisquam, odio quia reprehenderit.</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quaerat repellendus
+				molestiae nemo neque doloribus suscipit at debitis quia, reprehenderit doloremque
+				officiis dolorem numquam amet itaque quo. Sit amet consectetur adipisicing elit.
+				Officiis perferendis neque, cumque repellat molestiae quos!</p>
+
+		</section>
+
+		<section class="contact">
+			<img class="map" src="/lesson7a/images/map-of-soda-springs.PNG"
+				alt="Map of downtown Soda Springs.">
+			<div class="info">
+				<h2>Contact information</h2>
+				<p>Cold Front Weather</p>
+				<p><i class="material-icons">&#xe55e;</i> Address:<br>
+					144 S Main St Soda Springs, ID 83276<br><br>
+					<i class="material-icons">&#xe0cd;</i> Phone:<br>
+					555-555-5555<br><br>
+					<i class="material-icons">&#xe0be;</i> Email:<br>
+					weather@coldfront.com</p>
+			</div>
+			<div class="socialmedia">
+				<a href="https://www.instagram.com" target="_blank"><img
+						src="/lesson7a/images/instagram.png" alt="instagram icon"></a>
+				<a href="https://www.facebook.com" target="_blank"><img
+						src="/lesson7a/images/facebook.png" alt="facebook icon"></a>
+				<a href="https://www.twitter.com" target="_blank"><img
+						src="/lesson7a/images/twitter.png" alt="twitter icon"></a>
+				<a href="https://www.youtube.com" target="_blank"><img
+						src="/lesson7a/images/youtube.png" alt="youtubefacebook icon"></a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>
+			&copy; Cold Front Weather | Attributions | David Barney
+			<br>
+			<span id="date"></span>
+		</p>
+	</footer>
+
+	<script src="/lesson7a/js/date.js"></script>
+	<script src="/lesson7a/js/toggleMenu.js"></script>
+	<script src="/lesson7a/js/reminder.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script src="/lesson7a/js/webfontload.js"></script>
+	<script src="/lesson7a/js/wchill.js"></script>
+
+</body>
+
+</html>
