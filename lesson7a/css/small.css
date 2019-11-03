@@ -251,20 +251,26 @@ li a.active {
     grid-template-columns: auto;
     justify-content: center;
     margin: 10px;
-
 }
 
 .grid-item {
     background-color: #cfdee7;
     border: 1px solid #0A369D;
     overflow: hidden;
+    border-radius: .9rem;
 }
-
-picture img[data-src] {
+figure {
+    margin: 0px;
+}
+figure img[data-src] {
     filter: blur(0.2em);
 }
 
-picture img {
+figure img {
     filter: blur(0em);
     transition: filter 0.5s;
+}
+
+figcaption {
+    padding: .5rem 1rem;
 }
