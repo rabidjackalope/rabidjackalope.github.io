@@ -245,6 +245,10 @@ li a.active {
     margin-bottom: 20px;
 }
 
+.gallery h1 {
+    padding-left: 20px;
+}
+
 .grid-container {
     display: grid;
     grid-gap: 20px;
@@ -259,9 +263,11 @@ li a.active {
     overflow: hidden;
     border-radius: .9rem;
 }
+
 figure {
     margin: 0px;
 }
+
 figure img[data-src] {
     filter: blur(0.2em);
 }
