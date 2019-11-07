@@ -8,6 +8,7 @@ table {
     border: 2px solid rgb(200, 200, 200);
     letter-spacing: 1px;
     background-color: #e7f0ed;
+    box-shadow: 10px 10px 10px #628ca6;
 }
 
 thead {
