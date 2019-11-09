@@ -18,6 +18,7 @@
         margin-right: auto;
     }
 
+/*----------- GALLERY --------------*/
     .grid-container {
         grid-template-columns: auto auto auto;
     }
@@ -25,4 +26,9 @@
     .grid-item:hover {
         box-shadow: 0 0 30px #0A369D;
     }
+}
+
+/*----------- FORM --------------*/
+form label.sbs {
+    padding: .4rem 0;
 }
