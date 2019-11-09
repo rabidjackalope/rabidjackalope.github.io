@@ -353,7 +353,9 @@ form label.top input:required:valid {
 #ratingvalue {
 	margin: 0 15px;
 }
-
+form textarea {
+    width: 96%;
+}
 /*----------- Thank You --------------*/
 main.center {
     text-align: center;
