@@ -64,15 +64,16 @@
 
 					<label class="top">Storm Date <input type="date" name="completeDate"></label>
 
-					<label class="top">Storm Type <select name="stormType" id="#">
-							<option value="">Select Type &#9662;</option>
-							<option value="flood">Flash Flood</option>
-							<option value="hail">Hail</option>
-							<option value="hurricane">Hurricane</option>
-							<option value="thunderstorm">Thunderstorm</option>
-							<option value="tornado">Tornado</option>
-						</select>
-					</label>
+					<label for="stormchoice" class="top">Storm Type 
+					<input list="stormtype" id="stormchoice" name="stormchoice"></label>
+					<datalist id="stormtype">
+						<option value="Flash Flood"></option>
+						<option value="Hail"></option>
+						<option value="Hurricane"></option>
+						<option value="Thunderstorm"></option>
+						<option value="Tornado"></option>
+						<option value="Blizzard"></option>
+					</datalist>
 
 					<label class="flexly" class="top" for="rating">Storm Severity (1 - 10):
 						&nbsp;&nbsp;&nbsp;
