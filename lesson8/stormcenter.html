@@ -5,9 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Preston Town Page</title>
-	<meta name="description"
-		content="Main page for the town of Preston on the Cold Front Weather website">
+	<title>Storm Center</title>
+	<meta name="description" content="Reporting page for severe weather events">
 	<link rel="shortcut icon" href="/lesson8/favicon.ico">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -47,13 +46,16 @@
 
 	<main class="bg">
 		<section>
-			<h1 id="pagetitle">Storm Center</h1>
+			<h1>STORM CENTER</h1>
 			<form method="get" action="thanks.html">
 				<fieldset>
-					<legend>Contact Information</legend>
-					<label class="top">Full Name* <input type="text" name="fullname" minlength="5" required></label>
-					<label class="top">Email <input type="email" name="email" placeholder="someone@email.com"></label>
-					<label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+					<legend>Contact Information &nbsp;&nbsp;&nbsp;*indicates required field</legend>
+					<label class="top">Full Name* <input type="text" id="name" name="fullname"
+							minlength="5" pattern="[^0-9]+[a-zA-Z\s]{4,}" required></label>
+					<label class="top">Email <input type="email" name="email"
+							placeholder="someone@email.com"></label>
+					<label class="top">Phone* <input type="tel" name="phone"
+							placeholder="1235551234" required></label>
 					<label class="top">Zip Code* <input type="number" name="zip" required></label>
 				</fieldset>
 
@@ -61,17 +63,19 @@
 					<legend>Storm Information</legend>
 
 					<label class="top">Storm Date <input type="date" name="completeDate"></label>
+
 					<label class="top">Storm Type <select name="stormType" id="#">
 							<option value="">Select Type &#9662;</option>
-							<option value="preston">Flash Flood</option>
-							<option value="fishHaven">Hail</option>
-							<option value="sodaSprings">Hurricane</option>
-							<option value="sodaSprings">Thunderstorm</option>
-							<option value="sodaSprings">Tornado</option>
+							<option value="flood">Flash Flood</option>
+							<option value="hail">Hail</option>
+							<option value="hurricane">Hurricane</option>
+							<option value="thunderstorm">Thunderstorm</option>
+							<option value="tornado">Tornado</option>
 						</select>
 					</label>
 
-					<label class="flexly" class="top" for="rating">Storm Severity (1 - 10): &nbsp;&nbsp;&nbsp;
+					<label class="flexly" class="top" for="rating">Storm Severity (1 - 10):
+						&nbsp;&nbsp;&nbsp;
 						<input type="range" id="rating" value="5" min="1" max="10" step="1"
 							list="tickmarks" oninput="adjustRating(this.value)"
 							onchange="adjustRating(this.value)">
@@ -107,15 +111,14 @@
 					<div></div>
 					<label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
 					<label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-					<label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+					<label class="sbs"><input type="radio" name="danger" value="maybe">
+						Maybe</label>
 				</fieldset>
 
 				<fieldset>
 					<legend>Additional Information or Comments</legend>
-					<label class="top" for="textarea">
-						<textarea rows="10" cols="50" type="text"
-							placeholder="Enter Info Here..."></textarea>
-					</label>
+					<label class="top" for="textarea"><textarea rows="10" cols="50" type="text"
+							placeholder="Enter Info Here..."></textarea></label>
 				</fieldset>
 
 				<input class="submitBtn" type="submit" value="Send My Weather Report">
