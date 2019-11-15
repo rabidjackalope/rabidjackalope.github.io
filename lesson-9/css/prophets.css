@@ -1,0 +1,74 @@
+body,
+h2,
+img,
+main,
+header,
+footer,
+div,
+p {
+    font-family: 'Sunshiny', cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #BF3100;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: whitesmoke;
+}
+
+div.cards h2 {
+    padding: 1rem 0 0 0;
+    font-size: 18pt;
+    text-align: center;
+}
+
+div.cards p {
+    text-align: center;
+}
+
+div.cards section {
+    border-radius: 1em;
+    margin: .5rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+div.cards img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #BF3100;
+    margin: 2rem;
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 35em) {
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Large Screen */
+@media only screen and (min-width: 64rem) {
+    div.cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
