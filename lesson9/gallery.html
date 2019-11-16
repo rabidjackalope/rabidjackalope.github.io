@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Gallery Page</title>
+    <meta name="description"
+        content="Displaying current weather related images">
+    <link rel="shortcut icon" href="/lesson8/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/lesson8/css/normalize.css">
+    <link rel="stylesheet" href="/lesson8/css/small.css">
+    <link rel="stylesheet" href="/lesson8/css/medium.css">
+    <link rel="stylesheet" href="/lesson8/css/large.css">
+</head>
+
+<body>
+    <div class="banner">
+        <span id="reminder"></span>
+    </div>
+
+    <header>
+        <picture>
+            <img src="/lesson8/images/iconfinder_weather-rainy-snowy_274761.svg"
+                alt="cloud with a snowflake and rain drops">
+        </picture>
+        <section class="headings">
+            <h1>Cold Front Weather</h1>
+            <div class="m">Taking the chill out of your day!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="/lesson8/preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson8/gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="gallery">
+        <h1>Weather Gallery</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <picture>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/sweater.jpg"
+                        alt="Sweater Weather">
+                </picture>
+                <figcaption>Sweater Weather</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/alpine-background.jpg"
+                        alt="snow covered mountains">
+                </figure>
+                <figcaption>Snow covered mountains</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/pier.jpg"
+                        alt="snow covered pier">
+                </figure>
+                <figcaption>Snow covered pier over the lake</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/tiger.jpg"
+                        alt="tiger in snow">
+                </figure>
+                <figcaption>Tiger at the zoo in the snow</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/family.jpg"
+                        alt="family in snow">
+                </figure>
+                <figcaption>A Family enjoying the snow</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/skiing.jpg"
+                        alt="skier">
+                </figure>
+                <figcaption>A quick run down the slopes</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/hiker.jpg"
+                        alt="hiker in mountains">
+                </figure>
+                <figcaption>A nice day for a winter hike</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/christmas-ball.jpg"
+                        alt="Christmas decoration">
+                </figure>
+                <figcaption>Time to deck the halls for Christmas</figcaption>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/lesson8/images/img_placeholder_400x300.jpg" data-src="/lesson8/images/trees.jpg"
+                        alt="ice and snow coverd trees">
+                </figure>
+                <figcaption>Ice and snow covered trees</figcaption>
+            </div>
+        </div>
+    </main>
+    </main>
+
+    <footer class="gallery">
+        <p>
+            &copy; Cold Front Weather | Attributions | David Barney
+            <br>
+            <span id="date"></span>
+        </p>
+    </footer>
+
+    <script src="/lesson8/js/date.js"></script>
+    <script src="/lesson8/js/toggleMenu.js"></script>
+    <script src="/lesson8/js/reminder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="/lesson8/js/webfontload.js"></script>
+    <script src="/lesson8/js/progLoad.js"></script>
+
+</body>
+
+</html>
