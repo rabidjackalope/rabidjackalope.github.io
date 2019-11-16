@@ -356,9 +356,37 @@ form label.top input:required:valid {
 form textarea {
     width: 96%;
 }
+
 /*----------- Thank You --------------*/
 main.center {
     text-align: center;
     background-color: #f8f8ff;
     padding: 10px 8px 50px 8px;
+}
+
+/*----------- Home Page --------------*/
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+}
+
+div.cards section {
+    border-radius: 1em;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: #cfdee7;
+    box-shadow: 0px 2px 7px 4px rgba(0,0,0,0.4);
+}
+
+div.cards img {
+    width: 100%;
+}
+
+.main {
+    max-width: 75%;
+}
+
+.main h1{
+    font-size: 3rem;
 }

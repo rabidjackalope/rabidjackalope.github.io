@@ -88,7 +88,7 @@
         vertical-align: top
     }
 
-    .cell img{
+    .cell img {
         max-width: 55%;
     }
 
@@ -111,6 +111,7 @@
         width: 90%;
         margin: 25px 10px;
     }
+
     footer {
         margin-left: 10px;
         margin-right: 10px;
@@ -119,9 +120,14 @@
     main {
         padding-left: 15px;
         padding-right: 15px;
-	}
-    .grid-container {
-		grid-template-columns: auto auto;
-	}
-}
+    }
 
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    /*----------- Home Page --------------*/
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
