@@ -372,6 +372,15 @@ div.cards {
     text-align: left;
 }
 
+div.cards h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+div.cards h3 {
+    font-style: italic;
+    margin-top: .5rem;
+}
+
 div.cards section {
     border-radius: 1em;
     margin: .5rem;
