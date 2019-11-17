@@ -2,6 +2,7 @@ body {
     font-size: 16px;
     color: #0A369D;
     font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
 }
 
 header,
@@ -384,13 +385,14 @@ div.cards img {
 }
 
 .main {
-    max-width: 75%;
-
+    max-width: 80%;
 }
 
-.main h1 {
+.main h4 {
     font-size: 3rem;
+    margin-bottom: .5rem;
 }
-.main h2 {
+.main h5 {
     font-size: 2.5rem;
+    margin-top: .5rem;
 }
