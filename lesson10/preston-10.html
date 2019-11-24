@@ -46,9 +46,10 @@
 	</nav>
 
 	<main>
+		<h2><span id="city-name">.</span></h2>
 		<div class="herodiv">
 			<picture>
-					<img src="/lesson10/images/aerial-architecture-cars-1486785.jpg"
+				<img src="/lesson10/images/aerial-architecture-cars-1486785.jpg"
 					alt="Aerial view of a small town with many houses">
 			</picture>
 			<div class="weatherstats">
@@ -57,20 +58,22 @@
 				</div>
 				<div class="column1">
 					<ul>
-						<li>Currently:</li>
-						<li>High:</li>
-						<li>Wind Chill:</li>
-						<li>Humidity:</li>
-						<li>Wind Speed:</li>
+						<li>Currently: </li>
+						<li>High: </li>
+						<li>Current Temp: </li>
+						<li>Wind Chill: </li>
+						<li>Humidity: </li>
+						<li>Wind Speed: </li>
 					</ul>
 				</div>
 				<div class='column2'>
 					<ul>
-						<li id="tempF"><span id="temp">20</span> &#8457;</li>
-						<li id="high">22 &#8457;</li>
-						<li id="Wchill"><span id="chill"></span></li>
-						<li id="humid">98%</li>
-						<li id="wspeed"><span id="speed">5</span>mph</li>
+						<li><span id="current"></span></li>
+						<li><span id="high"></span> &#8457;</li>
+						<li><span id="temp"></span> &#8457;</li>
+						<li><span id="chill"></span></li>
+						<li><span id="humidity"></span>%</li>
+						<li><span id="wind-speed"></span> mph</li>
 					</ul>
 				</div>
 			</div>
@@ -80,38 +83,23 @@
 			<h2>5-Day Forecast</h2>
 			<table class="weathertable">
 				<tr>
-					<th class="cell">Sunday</th>
-					<th class="cell">Monday</th>
-					<th class="cell">Tuesday</th>
-					<th class="cell">Wednesday</th>
-					<th class="cell">Thursday</th>
+					<th class="cell"><span id="names1"></span></th>
+					<th class="cell"><span id="names2"></span></th>
+					<th class="cell"><span id="names3"></span></th>
+					<th class="cell"><span id="names4"></span></th>
+					<th class="cell"><span id="names5"></span></th>
 				</tr>
 				<tr>
-					<td class="cell"><img
-							src="/lesson10/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
-							alt="cloud with snow falling">
-						<p>Frigid &#8457;</p>
-					</td>
-					<td class="cell"><img
-							src="/lesson10/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
-							alt="cloud with snow falling">
-						<p>Bitter &#8457;</p>
-					</td>
-					<td class="cell"><img
-							src="/lesson10/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
-							alt="cloud with snow falling">
-						<p>Frozen &#8457;</p>
-					</td>
-					<td class="cell"><img
-							src="/lesson10/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
-							alt="cloud with snow falling">
-						<p>Frosty &#8457;</p>
-					</td>
-					<td class="cell"><img
-							src="/lesson10/images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png"
-							alt="cloud with snow falling">
-						<p>Icy &#8457;</p>
-					</td>
+					<td class="cell"><img id="icon1" src="/" alt="/"><br /><span id="day1"></span>
+						&#8457;</td>
+					<td class="cell"><img id="icon2" src="/" alt="/"><br /><span id="day2"></span>
+						&#8457;</td>
+					<td class="cell"><img id="icon3" src="/" alt="/"><br /><span id="day3"></span>
+						&#8457;</td>
+					<td class="cell"><img id="icon4" src="/" alt="/"><br /><span id="day4"></span>
+						&#8457;</td>
+					<td class="cell"><img id="icon5" src="/" alt="/"><br /><span id="day5"></span>
+						&#8457;</td>
 				</tr>
 			</table>
 		</section>
@@ -161,7 +149,8 @@
 
 	<footer>
 		<p>
-			&copy; Cold Front Weather | Attributions | David Barney
+			&copy; Cold Front Weather | Attributions: <a
+				href="https://openweathermap.org/">OpenWeatherMap</a> | David Barney
 			<br>
 			<span id="date"></span>
 		</p>
@@ -173,6 +162,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script src="/lesson10/js/webfontload.js"></script>
 	<script src="/lesson10/js/wchill.js"></script>
+	<script src="/lesson10/js/prestonapi.js"></script>
 
 </body>
 
