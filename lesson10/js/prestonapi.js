@@ -30,8 +30,8 @@ summaryBox = (jsObject) =>  {
 
   document.getElementById('city-name').textContent = cityName;
   document.getElementById('current').textContent = current;
-  document.getElementById('high').textContent = high;
-  document.getElementById('temp').textContent = temp;
+  document.getElementById('high').textContent = high.toFixed(0);
+  document.getElementById('temp').textContent = temp.toFixed(0);
   document.getElementById('humidity').textContent = humidity;
   document.getElementById('wind-speed').textContent = windSpeed;
 
