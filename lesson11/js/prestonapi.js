@@ -52,25 +52,25 @@ fiveDay = (jsObject) => {
 
       switch(weekdays) {
         case 1: 
-          varDay = "Mon";
+          varDay = "Monday";
           break;
         case 2:
-          varDay = "Tues";
+          varDay = "Tuesday";
           break;
         case 3:
-          varDay = "Wed";
+          varDay = "Wednesday";
           break;
         case 4:
-          varDay = "Thurs";
+          varDay = "Thursday";
           break;
         case 5:
-          varDay = "Fri";
+          varDay = "Friday";
           break;
         case 6:
-          varDay = "Sat";
+          varDay = "Saturday";
           break;
         case 0:
-          varDay = "Sun";
+          varDay = "Sunday";
           break;
       }
       
