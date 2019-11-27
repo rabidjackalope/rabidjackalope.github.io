@@ -414,8 +414,9 @@ div.cards img {
     max-width: 80%;
 }
 
-.info {
+.indexinfo {
     text-align: center;
+    font-size: 1.5rem;
     margin: 1.5rem .5rem;
 }
 
