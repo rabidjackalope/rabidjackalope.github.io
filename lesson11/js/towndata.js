@@ -10,6 +10,8 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == 'Fish Haven' || towns[i].name == 'Preston' || towns[i].name == 'Soda Springs') {
+                let cardlink = document.createElement('a')
+
                 let card = document.createElement('section');
                 let h2 = document.createElement('h2');
 
@@ -20,6 +22,9 @@ fetch(requestURL)
                 let rainfall = document.createElement('p');
                 let pic = document.createElement('img');
                 
+
+                cardlink.setAttribute('href', '/lesson11/' + towns[i].name.replace(/\s(?=\w+)/g, "") + '.html');
+              
                 h2.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
 
@@ -29,14 +34,17 @@ fetch(requestURL)
                 rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + ' in';
                 pic.setAttribute('src', '/lesson11/images/' + towns[i].photo);
 
+
                 card.appendChild(h2);
                 card.appendChild(motto);
                 card.appendChild(year);
                 card.appendChild(pop);
                 card.appendChild(rainfall);
                 card.appendChild(pic);
+                
 
-                document.querySelector('div.cards').appendChild(card);
+                document.querySelector('div.cards').appendChild(cardlink).appendChild(card);
+
             }
         }
     });

@@ -288,6 +288,8 @@ main.bg {
     padding: 10px 8px 50px 8px;
 }
 
+
+
 /*----------- FORM --------------*/
 form fieldset {
     margin: 2rem 0;
@@ -370,6 +372,15 @@ div.cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: left;
+}
+
+div.cards a {
+    text-decoration: none;
+    color: #0A369D;
+}
+
+div.cards a:visited {
+    color: #0A369D;
 }
 
 div.cards h2 {
