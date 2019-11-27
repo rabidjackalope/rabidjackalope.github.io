@@ -378,6 +378,7 @@ div.cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: left;
+    transition-property: transform;
 }
 
 div.cards a {
@@ -387,6 +388,10 @@ div.cards a {
 
 div.cards a:visited {
     color: #0A369D;
+}
+
+div.cards a:hover {
+    transform: scale(1.075);
 }
 
 div.cards h2 {
