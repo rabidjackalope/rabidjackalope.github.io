@@ -23,7 +23,7 @@ fetch(requestURL)
                 let pic = document.createElement('img');
                 
 
-                cardlink.setAttribute('href', '/lesson11/' + towns[i].name.replace(/\s(?=\w+)/g, "") + '.html');
+                cardlink.setAttribute('href', '/lesson11/' + towns[i].name.replace(/\s(?=\w+)/g, "").toLowerCase() + '.html');
               
                 h2.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
