@@ -58,11 +58,11 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 90%;
+        table-layout: fixed;
     }
 
-    .weathertable td {
-        font-family: Arial, sans-serif;
+    .weathertable td, th {
         font-size: 1rem;
         padding: 10px 5px;
         border-style: solid;
@@ -73,15 +73,7 @@
     }
 
     .weathertable th {
-        font-family: Arial, sans-serif;
-        font-size: 1rem;
         font-weight: bold;
-        padding: 10px 5px;
-        border-style: solid;
-        border-width: 1px;
-        overflow: hidden;
-        word-break: normal;
-        border-color: #0A369D;
     }
 
     .cell {
@@ -103,7 +95,7 @@
 
     .contact {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr .5fr;
         margin: 20px;
     }
 
