@@ -250,7 +250,7 @@ li a.active {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+/*-----------Gallery--------------*/
 .gallery h1 {
     padding-left: 20px;
 }
@@ -270,20 +270,20 @@ li a.active {
     border-radius: .9rem;
 }
 
-figure {
+.gallery figure {
     margin: 0px;
 }
 
-figure img[data-src] {
+.gallery figure img[data-src] {
     filter: blur(0.2em);
 }
 
-figure img {
+.gallery figure img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-figcaption {
+.gallery figcaption {
     padding: .5rem 1rem;
 }
 /*----------- Storm Center--------------*/
