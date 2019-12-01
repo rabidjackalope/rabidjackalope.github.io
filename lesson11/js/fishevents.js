@@ -12,23 +12,27 @@ fetch(requestURL)
             if ( towns[i].name == 'Fish Haven') {
 
                 let card = document.createElement('section');
-                let h2 = document.createElement('h2');
+                /* let h2 = document.createElement('h2'); */
+                let list = document.createElement('ul')
 
-                let event1 = document.createElement('p');
-                let event2 = document.createElement('p');
-                let event3 = document.createElement('p');
+                let event1 = document.createElement('li');
+                let event2 = document.createElement('li');
+                let event3 = document.createElement('li');
+
+                list.setAttribute('class', 'timeline');
+                card.setAttribute('class', 'card');
               
-                h2.textContent = '2020 Events';
+                /* h2.textContent = '2020 Events'; */
                 event1.textContent = towns[i].events[0];
                 event2.textContent = towns[i].events[1];
                 event3.textContent = towns[i].events[2];
 
-                card.appendChild(h2);
-                card.appendChild(event1);
-                card.appendChild(event2);
-                card.appendChild(event3);                
+                /* card.appendChild(h2); */
+                card.appendChild(list).appendChild(event1);
+                card.appendChild(list).appendChild(event2);
+                card.appendChild(list).appendChild(event3);
 
-                document.querySelector('div.events').appendChild(card);
+                document.querySelector('div.container').appendChild(card);
 
             }
         }

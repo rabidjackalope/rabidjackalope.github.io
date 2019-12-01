@@ -55,15 +55,6 @@ nav ul {
     overflow: hidden;
 }
 
-/* Place holder CSS for each of the sections of the page
-main section {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 1px dashed #0A369D;
-    padding: 1rem 1rem;
-    background-color: #cfdee7;
-}*/
-
 .navigation {
     list-style: none;
     text-align: center;
@@ -439,4 +430,76 @@ div.cards img {
 .main h5 {
     font-size: 2rem;
     margin-top: .5rem;
+}
+
+
+/*----------- Events --------------*/
+.container{
+    margin: 50px auto 200px auto;
+  }
+  
+  .timeline{
+    counter-reset: year 0;
+    position: relative;
+    align-items: center;
+
+  }
+  
+  .timeline li{
+    list-style: none;
+    float: left;
+    width: 33.3333%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  ul:nth-child(1){
+    color: #0A369D;
+  }
+  
+  .timeline li:before{
+    counter-increment: year;
+    content: counter(year);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0A369D;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    background: #F1F1F1;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+  }
+  
+  .timeline li:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #0A369D;
+    top: 25px;
+    left: -50%;
+    z-index: -999;
+    transition: all ease-in-out .3s;
+  }
+  
+  .timeline li:first-child:after{
+    content: none;
+  }
+ 
+
+
+  .events {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px dashed #0A369D;
+    padding: 1rem 1rem;
+    
+}
+
+.events h2 {
+    margin: 0;
 }
