@@ -126,22 +126,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    body.image {
-        background-position: center;
-        background-image: url(../images/atmosphere.jpg);
-        background-attachment: fixed;
-    }
 
     /*----------- Storm Center --------------*/
     main.bg {
         background-color: #f8f8ff;
         padding: 10px 8px 50px 8px;
-    }
-
-    body.bgimage {
-        background-position: center;
-        background-image: url(../images/storm.jpg);
-        background-attachment: fixed;
     }
 
     /*----------- City Pages --------------*/
@@ -151,11 +140,4 @@
         padding: 5px;
     }
 
-
-    body.cityimage {
-        background-position: center;
-        background-image: url(../images/white-tree.jpg);
-        background-attachment: fixed;
-
-    }
 }
