@@ -204,7 +204,6 @@ li a.active {
 .article {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #0A369D;
     padding: 1rem 1rem;
     background-color: #cfdee7;
 }
@@ -278,18 +277,6 @@ li a.active {
 
 .gallery figcaption {
     padding: .5rem 1rem;
-}
-/*----------- Storm Center--------------*/
-main.bg {
-    background-color: #f8f8ff;
-    padding: 10px 8px 50px 8px;
-}
-
-body.bgimage {
-    background-position: center;
-    background-image: url(../images/storm.jpg);
-    background-attachment: fixed;
-
 }
 
 /*----------- FORM --------------*/
@@ -482,24 +469,10 @@ div.cards img {
     background-color: #0A369D;
     top: 25px;
     left: -50%;
-    z-index: -999;
+    z-index: -998;
     transition: all ease-in-out .3s;
   }
   
   .timeline li:first-child:after{
     content: none;
   }
- 
-
-
-  .events {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 1px dashed #0A369D;
-    padding: 1rem 1rem;
-    
-}
-
-.events h2 {
-    margin: 0;
-}
