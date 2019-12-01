@@ -226,10 +226,16 @@ li a.active {
     margin: 0 0 0 17px;
 }
 
-.contact {
+.contact, .contact2 {
     display: block;
     align-content: center;
     margin: 20px;
+}
+
+.contact2 {
+    max-width: 100%;
+    align-items: center;
+
 }
 
 .map {
