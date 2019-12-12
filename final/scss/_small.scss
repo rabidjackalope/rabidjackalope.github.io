@@ -15,6 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('/final/images/banner.jpg');
 }
 
 header h1 {
@@ -39,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Serif', serif;
     /*color: #0A369D;*/
     text-align: center;
 }
@@ -61,123 +62,95 @@ h6 {
     margin-left: 20px;
     margin-top: 5px;
 }
-/*----------- End of Header --------------*/
-
-/*----------- Navigation --------------*/
-nav {    
-    display: block;
-    text-align: center;
-  }
-  nav ul {
-    margin: 0;
-    padding:0;
-    list-style: none;
-  }
-  .nav a {
-    display:block; 
-    background: #45594d; 
-    color: white; 
-    text-decoration: none;
-    padding: 0.8em 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 -1px 0 #000;
-    position: relative;
-  }
-  .nav{  
-    vertical-align: top; 
-    display: inline-block;
-    box-shadow: 
-      1px -1px -1px 1px #000, 
-      -1px 1px -1px 1px #fff, 
-      0 0 6px 3px #fff;
-    border-radius:6px;
-  }
-  .nav li {
-    position: relative;
-  }
-  .nav > li { 
-    float: left; 
-    border-bottom: 4px #aaa solid; 
-    margin-right: 1px; 
-  } 
-  .nav > li > a { 
-    margin-bottom: 1px;
-    box-shadow: inset 0 2em .33em -0.5em #555; 
-  }
-  .nav > li:hover, 
-  .nav > li:hover > a { 
-    border-bottom-color: #82394a;
-  }
-  .nav li:hover > a { 
-    color: #e6dccc; 
-  }
-  .nav > li:first-child { 
-    border-radius: 4px 0 0 4px;
-  } 
-  .nav > li:first-child > a { 
-    border-radius: 4px 0 0 0;
-  }
-  .nav > li:last-child { 
-    border-radius: 0 0 4px 0; 
-    margin-right: 0;
-  } 
-  .nav > li:last-child > a { 
-    border-radius: 0 4px 0 0;
-  }
-  .nav li li a { 
-    margin-top: 1px;
-  }
-  .nav li a:first-child:nth-last-child(2):before { 
-    content: ""; 
-    position: absolute; 
-    height: 0; 
-    width: 0; 
-    border: 5px solid transparent; 
-    top: 50% ;
-    right:5px;  
-   }
-  .nav ul {
-    position: absolute;
-    white-space: nowrap;
-    border-bottom: 5px solid  #82394a;
-    z-index: 1;
-    left: -99999em;
-  }
-  .nav > li:hover > ul {
-    left: auto;
-    margin-top: 5px;
-    min-width: 100%;
-  }
-  .nav > li li:hover > ul { 
-    left: 100%;
-    margin-left: 1px;
-    top: -1px;
-  }
-  /* arrow hover styling */
-  .nav > li > a:first-child:nth-last-child(2):before { 
-    border-top-color: #aaa; 
-  }
-  .nav > li:hover > a:first-child:nth-last-child(2):before {
-    border: 5px solid transparent; 
-    border-bottom-color: #aaa; 
-    margin-top:-5px
-  }
-  .nav li li > a:first-child:nth-last-child(2):before {  
-    border-left-color: #aaa; 
-    margin-top: -5px
-  }
-  .nav li li:hover > a:first-child:nth-last-child(2):before {
-    border: 5px solid transparent; 
-    border-right-color: #82394a;
-    right: 10px; 
-  }
-/*----------- End of Navigation --------------*/
 
 header img {
     width: 80px;
     height: auto;
 }
+/*----------- End of Header --------------*/
+
+
+/*----------- Navigation --------------*/
+li a.active {
+    color: #e6dccc;
+    background-color: #82394a;
+    font-weight: bold;
+}
+
+
+/*----------- End of Navigation --------------*/
+
+
+/*----------- index --------------*/
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.herodiv img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    max-width: 240px;
+    height: 100px;
+    background-color: #e6dccc;
+    color: #82394a;
+    opacity: 0.60;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .overlay h2 p {
+    text-align: center;
+    margin: 15px;
+  }
+
+  .overlay2 {
+    width: 93%;
+    height: 100px;
+    background-color: #e6dccc;
+    color: #82394a;
+    opacity: 0.80;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .overlay2 h2 p {
+    text-align: center;
+    margin: 15px;
+  }
+
+/*----------- End of Section 1--------------*/
+
+/*----------- Contact Info --------------*/
+.contact, .contact2 {
+    display: block;
+    align-content: center;
+}
+
+.contact2 {
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.map {
+    display: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*----------- End of Contact Info --------------*/
+
 
 footer {
     text-align: center;
@@ -188,7 +161,7 @@ footer {
 main section {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    border: 1px dashed #0A369D;
+    border: 1px dashed #82394a;
     padding: 1rem 1rem;
-    background-color: #cfdee7;
+    background-color: #ccb999;
 }
