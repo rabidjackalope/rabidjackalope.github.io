@@ -6,7 +6,7 @@ body {
 
 header,
 footer {
-    background-color: #e6dccc;
+    background-color: #ccb999;
     color: #82394a;
 }
 
@@ -44,6 +44,7 @@ h6 {
     /*color: #0A369D;*/
     text-align: center;
 }
+
 /*----------- Header --------------*/
 .headings {
     display: flex;
@@ -67,6 +68,7 @@ header img {
     width: 80px;
     height: auto;
 }
+
 /*----------- End of Header --------------*/
 
 
@@ -93,42 +95,111 @@ li a.active {
 }
 
 .overlay {
-    max-width: 240px;
-    height: 100px;
-    background-color: #e6dccc;
-    color: #82394a;
-    opacity: 0.60;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .overlay h2 p {
-    text-align: center;
-    margin: 15px;
-  }
+    display: none;
+}
 
-  .overlay2 {
-    width: 93%;
-    height: 100px;
-    background-color: #e6dccc;
-    color: #82394a;
-    opacity: 0.80;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-  }
-  
-  .overlay2 h2 p {
+.overlay2 {
+    display: none;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #82394a;
+    color: #e6dccc;
+    padding: 28px;
+    font-size: 1.5rem;
     text-align: center;
-    margin: 15px;
-  }
+}
+
+.smallbutton a {
+    text-decoration: none;
+}
 
 /*----------- End of Section 1--------------*/
 
+/*----------- Reservation Form--------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #82394a;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #82394a;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #82394a;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #82394a;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.flexly {
+    padding-top: 30px;
+	display: flex;
+	align-items: center;
+}
+
+#roomvalue {
+	margin: 0 15px;
+}
+form textarea {
+    width: 96%;
+}
+
+main.center {
+    text-align: center;
+    background-color: #e6dccc;
+    padding: 10px 8px 50px 8px;
+}
+
+/*----------- End of Reservation Form--------------*/
+
 /*----------- Contact Info --------------*/
-.contact, .contact2 {
+.contact,
+.contact2 {
     display: block;
     align-content: center;
 }
@@ -149,6 +220,7 @@ li a.active {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 /*----------- End of Contact Info --------------*/
 
 
@@ -163,5 +235,5 @@ main section {
     margin-bottom: 0.5rem;
     border: 1px dashed #82394a;
     padding: 1rem 1rem;
-    background-color: #ccb999;
+    background-color: #e6dccc;
 }
