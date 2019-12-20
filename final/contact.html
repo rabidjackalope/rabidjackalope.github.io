@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Temple Missionaries - Temple Inn and Suites</title>
+    <title>Contact Us - Temple Inn and Suites</title>
     <meta name="description" content="Main page for the Temple Inn and SUites Home page">
     <link rel="shortcut icon" href="#">
 
@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body class='bgimage2'>
     <header>
         <a href="index.html">
             <picture>
@@ -33,7 +33,7 @@
 
     <nav>
         <ul class="nav">
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a>
                 <ul>
                     <li><a href="reception.html">Receptions</a></li>
@@ -48,11 +48,56 @@
 
     <main>
         <section>
+            <h1>Contact US</h1>
+            <p>Questions? Comments? Suggestions? We'd love to hear from you.</p>
+            <form method="get" action="thanks1.html">
+                <fieldset>
+                    <legend>Contact Information &nbsp;<em>(*required)</em></legend>
+                    <label class="top">Full Name* <input type="text" id="name" name="fullname"
+                            minlength="5" pattern="[^0-9]+[a-zA-Z\s]{4,}" required></label>
+                    <label class="top">Email <input type="email" name="email"
+                            placeholder="someone@email.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone"
+                            placeholder="1235551234" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Type your response here...</legend>
+                    <label class="top" for="textarea"><textarea id="textarea" rows="10" cols="50"
+                            placeholder="Questions? Comment? Suggestions?"></textarea></label>
+                </fieldset>
+
+                <input class="submitBtn" type="submit" value="Send Inquiry">
+
+            </form>
         </section>
-
-        <section>
-
+        
+        <section class="contact">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028553!2d-77.09772048438202!3d38.98325594948326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576137445621!5m2!1sen!2sus"
+                width="400" height="300" frameborder="0" style="border:0;"
+                allowfullscreen=""></iframe>
+            <div class="info">
+                <h2>Contact Us</h2>
+                <p>Temple Inn and Suites</p>
+                <p><i class="material-icons">&#xe55e;</i> Address:<br>
+                    4800 Montgomery Ln #300, Bethesda, MD 20814<br><br>
+                    <i class="material-icons">&#xe0cd;</i> Phone:<br>
+                    240-555-5555<br><br>
+                    <i class="material-icons">&#xe0be;</i> Email:<br>
+                    customerservice@templeinn.com</p>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener"><img
+                        src="/lesson11/images/instagram.png" alt="instagram icon"></a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener"><img
+                        src="/lesson11/images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener"><img
+                        src="/lesson11/images/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener"><img
+                        src="/lesson11/images/youtube.png" alt="youtubefacebook icon"></a>
+            </div>
         </section>
 
     </main>
@@ -60,7 +105,8 @@
 
     <footer class="main">
         <p>
-            &copy;2019 Temple Inn and Suites | <a href="attributions.html">Attributions</a> | David Barney
+            &copy;2019 Temple Inn and Suites | <a href="attributions.html">Attributions</a> | David
+            Barney
             <br>
             <span id="date"></span>
         </p>
