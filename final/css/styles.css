@@ -860,9 +860,6 @@ main section {
   body.bgimage3 {
     background-image: url(../images/mountain.jpg); }
 
-  body.bgimage4 {
-    background-image: url(../images/cherry-blossoms.jpg); }
-
   /*----------- Temple --------------*/
   .grid-container {
     grid-template-columns: auto auto auto; }
