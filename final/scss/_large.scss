@@ -35,3 +35,18 @@ body.bgimage2 {
     background-image: url(../images/lighthouse.jpg);
     background-attachment: fixed;
 }
+
+body.bgimage3 {
+    background-position: center;
+    background-image: url(../images/mountain.jpg);
+    background-attachment: fixed;
+}
+
+    /*----------- Temple --------------*/
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-item:hover {
+        box-shadow: 0 0 30px #628384;
+    }

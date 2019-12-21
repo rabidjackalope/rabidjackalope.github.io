@@ -457,7 +457,7 @@ li a.active {
   font-weight: bold; }
 
 /*----------- End of Navigation --------------*/
-/*----------- index --------------*/
+/*----------- index Section 1--------------*/
 .herodiv {
   margin: 10px auto;
   position: relative; }
@@ -573,6 +573,23 @@ main.center {
   margin-bottom: 20px; }
 
 /*----------- End of Contact Info --------------*/
+/*----------- Services --------------*/
+.left-column, .right-column {
+  width: 48%;
+  flex: 1 0 15em;
+  margin: .5em; }
+
+#top-row, #middle-row, #third-row, #bottom-row {
+  display: block;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  color: #82394a; }
+
+.ser {
+  max-width: 100%; }
+
+/*----------- End of Services --------------*/
 footer {
   text-align: center;
   padding: .5rem; }
@@ -584,6 +601,36 @@ main section {
   border: 1px dashed #82394a;
   padding: 1rem 1rem;
   background-color: #e6dccc; }
+
+/*-----------Temples--------------*/
+.gallery h1 {
+  padding-left: 20px; }
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin: 10px; }
+
+.grid-item {
+  background-color: #cfdee7;
+  border: 1px solid #628384;
+  overflow: hidden;
+  border-radius: .9rem; }
+
+.gallery figure {
+  margin: 0px; }
+
+.gallery figure img[data-src] {
+  filter: blur(0.2em); }
+
+.gallery figure img {
+  filter: blur(0em);
+  transition: filter 0.5s; }
+
+.gallery figcaption {
+  padding: .5rem 1rem; }
 
 @media only screen and (min-width: 770px) {
   header img {
@@ -750,10 +797,17 @@ main section {
     display: none; }
 
   /*----------- End of Section 1 --------------*/
+  .grid-container {
+    grid-template-columns: auto auto; }
+
   /*----------- Reservation Form --------------*/
   main.bg {
     background-color: whitesmoke;
     padding: 10px 8px 50px 8px; }
+
+  /*----------- Services --------------*/
+  #top-row, #middle-row, #third-row {
+    display: flex; }
 
   /*----------- Contact Info --------------*/
   .contact {
@@ -796,5 +850,17 @@ main section {
   body.bgimage2 {
     background-position: center;
     background-image: url(../images/lighthouse.jpg);
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+
+  body.bgimage3 {
+    background-position: center;
+    background-image: url(../images/mountain.jpg);
+    background-attachment: fixed; }
+
+  /*----------- Temple --------------*/
+  .grid-container {
+    grid-template-columns: auto auto auto; }
+
+  .grid-item:hover {
+    box-shadow: 0 0 30px #628384; } }
 /* end of media query */

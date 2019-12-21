@@ -199,10 +199,20 @@ nav ul {
 }
 /*----------- End of Section 1 --------------*/
 
+
+.grid-container {
+  grid-template-columns: auto auto;
+}
+
 /*----------- Reservation Form --------------*/
 main.bg {
   background-color: whitesmoke;
   padding: 10px 8px 50px 8px;
+}
+
+/*----------- Services --------------*/
+#top-row, #middle-row, #third-row {
+  display: flex;
 }
 
 /*----------- Contact Info --------------*/
